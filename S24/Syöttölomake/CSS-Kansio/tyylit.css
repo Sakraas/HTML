@@ -1,0 +1,36 @@
+/* bodylle leveys ja sen keskitys vaakatasossa */
+body {
+    width: 450px;
+    margin: 0 auto;
+}
+/* Lomakkeelle taustaväri, hieman irti reunoista ja korkeuden määritys */
+form {
+    background-color: antiquewhite;
+    padding: 5px 20px;
+    height: 650px;
+}
+/* Otsikoiden määritys Block tyyppisiksi, leveys fonttikoko x10 ja kellutus vasemmalle */
+label {
+    display: block;
+    width: 10em;
+    float: left; /* makes the element act like inline block */
+    clear: left; /* clears any left floats so before so this should start on new line */
+}
+/* Input, select ja text-area leveys, perusfonttikoko x 10 ja kellutus vasemmalle, (eli) otsikoiden oikealle puolelle */
+input, select, textarea {
+    width: 10em;
+    float: left;
+}
+/* Tyylit käyttöön radio- ja checkbox -tyypeille vasen marginaali perusfonttikoko x 10 ja oikea marginaali 100px */
+.cb, .rb {
+margin-left: 10em;
+margin-right: -100px;
+}
+/* Painikkeen siirto oikealle ja sen leveyden muutos */
+input[type="submit"] {
+margin-left: 12em;
+width: 140px;
+}
+.alas{
+top: 20px;
+}

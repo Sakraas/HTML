@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <link rel="stylesheet" href="CSS-Kansio/tyylit.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syöttölomake</title>
+</head>
+    <body>
+        <form>
+            <h1>Syöttölomake</h1>
+            <!-- Tekstin syöttö -->
+            <label for="nimi">Nimi:</label>
+            <input type="text" id="nimi" />
+            <!-- Sähköpostin syöttö -->
+            <label for="email">Sähköposti:</label>
+            <input type="email" id="email" />
+            <!-- Salasanan syöttö -->
+            <label for="password">Salasana:</label>
+            <input type="password" id="password" />
+            <!-- Numeron syöttö -->
+                <label for="number">Numero:</label>
+                <input type="number" id="number" />
+                <!-- Tekstialueen syöttö -->
+                <label for="textarea">Tekstialue:</label>
+                <textarea id="textarea" cols="10" rows="10"></textarea>
+                <!-- Pudotusvalikon syöttö -->
+                <label for="dropdown">Pudotusvalikko:</label>
+                <select id="autot">
+                    <option value="Audi">Audi</option>
+                    <option value="Alfaromeo">Alfaromeo</option>
+                    <option value="BMW">BMW</option>
+                    <option value="Byd">Byd</option>
+                    <option value="Citroen">Citroën</option>
+                    <option value="Cupra">Cupra</option>
+                </select>
+                <!-- Monivalinnan syöttö -->
+                <label for="osaan">Osaan:</label>
+                <label for="checkbox" class="cb">HTML</label>
+                <input type="checkbox" id="HTML" />
+                <label for="checkbox" class="cb">CSS</label>
+                <input type="checkbox" id="CSS" />
+                <label for="checkbox">JavaScript</label>
+                <input type="checkbox" id="JavaSkript" />
+                <!-- Yhden valinnan syöttö -->
+                    <label for="syonkoulussa">Syön koulussa:</label>
+                    <label for="syon" class="rb">Syön</label>
+                    <input type="radio" id="syon" name="syo" />
+                    <label for="ensyo" class="rb">En syö</label>
+                    <input type="radio" id="ensyo" name="syo" />
+                    <!-- Värivalitsin -->
+                    <label for="color">Väri:</label>
+                    <input type="color" id="color" />
+                    <!-- Päivämäärä valitsin -->
+                    <label for="date">Päivämäärä:</label>
+                    <input type="date" id="distance" />
+                    <!-- Viikko valitsin -->
+                    <label for="Week">Viikko:</label>
+                    <input type="week" id="week" />
+                    <!-- Kuukausi valitsin -->
+                        <label for="month">Kuukausi:</label>
+                        <input type="month" id="month" />
+                        <!-- Liukuvalitsin -->
+                        <label for="range">Liukuvalitsin:</label>
+                        <input type="range" id="range" list="markers" />
+                        <datalist id="markers">
+                            <option value="0"></option>
+                            <option value="25"></option>
+                            <option value="50"></option>
+                            <option value="75"></option>
+                            <option value="100"></option>
+                        </datalist>
+                        <!-- URLin Syöttö -->
+                        <p class="alas"><label for="URL">URL</label>
+                        <input type="url" id="url" /></p>
+                        <!-- Lähteä painikkeen syöttö -->
+                        <input type="submit" value="Lähetä" />
+        </form>
+    </body>
+</html>
