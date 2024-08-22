@@ -1,0 +1,42 @@
+/* reunoille tilaa, paitsi matkapuhelimella selatessa width = 100% */
+body {
+    width: 90%;
+    margin: 0 auto;
+}
+/* huomioidaan reunat kun selataan matkapuhelimella */
+@media screen and (max-width: 800px) {
+    body {
+      width: 100%;
+      margin: 0 auto; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+  }
+/* Header 1. kohdistelua */
+header {
+    margin: 0 auto;
+}
+/* Logon keskittäminen */
+.logoheader {
+    display: block;
+    margin: auto;
+}
+/* Pilvi-idea keskittäminen */
+.otsikkoheader {
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0 auto;
+    text-align: center;
+}
+/* Vaakaviivan väri ja paksuus asetukset */ 
+.hrheader {
+    border: 1px solid rgb(0, 170, 255);
+}
+/* Header 2. kohdistelua ja fontti asetus */
+.header-2 {
+    text-align: center;
+    font-size: smaller;
+    font-family: 'Courier New', Courier, monospace;
+}
+/* Listauksen kuvat kohdalleen */
+li {
+    
+}
