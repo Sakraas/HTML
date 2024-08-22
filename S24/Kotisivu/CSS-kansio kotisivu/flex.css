@@ -1,5 +1,5 @@
 body {
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
 }
 main {
@@ -9,6 +9,7 @@ background-color: #fefae0;
 }
 article {
     color: #283618;
+    line-height: 1.6;
 }
 article h1 {
     font-size: 16px;
@@ -68,6 +69,7 @@ section {
     list-style: circle;
 }
 .koulukuvia {
+    max-width: 100%;
     width: 300px;
     margin-left: 0px;
 }
@@ -77,6 +79,9 @@ footer {
     display: flex;
     padding: 0 3%;
 }
+footer a {
+    text-decoration: none;
+}
 img {
     width: 100%;
     margin-left: -40px;
@@ -84,3 +89,10 @@ img {
 figcaption {
     margin-left: -40px;
 }
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 800px) {
+    body {
+      width: 100%;
+      margin: 0 auto; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+  }
