@@ -13,7 +13,6 @@ header {
 #left {
     display: block;
     float: left;
-    min-width: 200px;
     width: 30%;
     background-color: #e3d5ca;
 }
@@ -31,7 +30,6 @@ a {
 #right {
     display: block;
     float: right;
-    min-width: 469px;
     width: 70%;
     background-color: #edede9;
 }
@@ -60,23 +58,4 @@ footer {
 }
 footer p {
     text-align: center
-}
-/*------------------------
-      Responsiivisuus
--------------------------*/
-
-/* Näytöt, joiden maksimileveys on 844px */
-@media (max-width:844px) {
-
-    
-  }
-  /* Näytöt, joiden maksimileveys on 799px */
-  @media (max-width: 799px) {
-
-  }
-  /* Näytöt, joiden maksimileveys on 479px */
-  @media (min-width: 479px) {
-    #left {
-        min-width: 100px;
-    }
 }
