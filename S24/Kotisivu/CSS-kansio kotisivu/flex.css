@@ -3,9 +3,9 @@ body {
     margin: 0 auto;
 }
 main {
-display: flex;
-overflow: hidden;
-background-color: #fefae0;
+    display: flex;
+    overflow: hidden;
+    background-color: #fefae0;
 }
 article {
     color: #283618;

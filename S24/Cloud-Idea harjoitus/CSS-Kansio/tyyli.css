@@ -1,42 +1,222 @@
-/* reunoille tilaa, paitsi matkapuhelimella selatessa width = 100% */
+/* google font */
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playwrite+AU+QLD:wght@100..400&display=swap');
+/* sivulla näkyviin teksteihin väljyyttä */ 
 body {
-    width: 90%;
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+/* tekstiin väljyyttä */
+p {
+    margin: 10px 0;
+    line-height: 1.5em;
+}
+/* reunoille tilaa, taustaväri valkoiseksi */
+main {
+    display: table;
+    width: 70%;
+    margin: 10px auto;
+    overflow: auto;
+    background: #FFF;
+}
+/* header keskitys */
+.header {
     margin: 0 auto;
 }
-/* huomioidaan reunat kun selataan matkapuhelimella */
-@media screen and (max-width: 800px) {
-    body {
-      width: 100%;
-      margin: 0 auto; /* The width is 100%, when the viewport is 800px or smaller */
-    }
-  }
-/* Header 1. kohdistelua */
-header {
-    margin: 0 auto;
-}
-/* Logon keskittäminen */
-.logoheader {
+/* logon keskittäminen */
+.header img {
     display: block;
     margin: auto;
 }
-/* Pilvi-idea keskittäminen */
-.otsikkoheader {
-    font-size: medium;
-    font-family: 'Courier New', Courier, monospace;
+/* pilvi-idea otsikon keskittäminen */
+.header h1 {
+    font-size: large;
+    font-family: "Great Vibes", cursive;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
     margin: 0 auto;
     text-align: center;
 }
 /* Vaakaviivan väri ja paksuus asetukset */ 
-.hrheader {
+.header hr {
     border: 1px solid rgb(0, 170, 255);
 }
 /* Header 2. kohdistelua ja fontti asetus */
 .header-2 {
     text-align: center;
-    font-size: smaller;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    font-family: "Great Vibes", cursive;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
 }
-/* Listauksen kuvat kohdalleen */
-li {
-    
+/* listauksen kuvat kohdalleen */
+li img, li h2 {
+    display: -webkit-inline-box;
+}
+li img {
+    margin:0 0 -7px 0;
+}
+li h2 {
+    font-family: "Great Vibes", cursive;
+}
+#for-us h2 {
+    font-family: "Great Vibes", cursive;
+}
+/* article left vasemmalle */
+#left {
+    float: left;
+    width: 48%;
+}
+/* article right oikealle */
+#right {
+    float: right;
+    width: 48%;
+}
+/* contact form */
+#contact-form {
+    border: 4px solid rgb(0, 170, 255);
+    padding: 30px 20px 20px 20px;
+    border-radius: 10px;
+    overflow: auto;
+    background: #F4F4F4;
+}
+#contact-form h1 {
+    font-size: large;
+    font-family: "Great Vibes", cursive;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+#contact-form div {
+    margin-bottom: 20px;
+}
+#contact-form label {
+    display: inline-block;
+    width: 100px;
+    font-weight: bold;
+}
+/* määritetään contact-form-id:n sisällä olevan text- ja email-input tyypit*/
+#contact-form input[type='text'],
+#contact-form input[type='email'] {
+    height: 25px;
+    width: 50%;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+}
+/* määritetään contact-form-id:n sisällä oleva submit-input-tyyppi */
+#contact-form input[type='submit'] {
+    display: block;
+    float: right;
+    padding: 12px 17px;
+    background: #FA6E3E;
+    color: #FFF;
+    border: 0;
+    border-radius: 5px;
+}
+/* määritetään contact-form-id:n sisällä oleva submit-input-tyypin toiminta
+silloin, kun sitä osoittaa hiirellä (hover)
+
+Muutetaan osoitin erilaiseksi - cursor: pointer */
+
+#contact-form input[type='submit']:hover {
+    background: #D55427;
+    cursor: pointer;
+}
+
+#contact-form .content-footer p {
+    font-style: italic;
+    text-align: center;
+    color: #777;
+    font-size: .8em;
+}
+
+#testimonials {
+    display: table-row;
+    margin: 40px 0;
+    color: #777;
+}
+  
+#testimonials img {
+    float: left;
+    margin-right: 20px;
+}
+  
+#testimonials blockquote {
+    padding: -30px 30px 20px 30px;
+    width: 90%;
+}
+
+#copyright {
+    text-align: center;
+    color: #AAA;
+}
+
+/* responsiivisuus */
+/* Näytöt, joiden maksimileveys on 1023px */
+@media (max-width:1023px) {
+#container {
+    width: 80%;
+}
+
+h1 {
+    font-size: 2.2em;
+}
+
+#left, #right {
+    width: 100%;
+    clear: both;
+    float: left;
+}
+
+#left .points li{
+    width: 80%;
+    margin: 0 auto 30px;
+    padding: 8px;
+    background: #EEE;
+    border-radius: 5px;
+}
+
+#left .points img {
+    margin-top: 10px;
+}
+
+#testimonials img {
+    display: block;
+    margin: 20px auto;
+    float: none;
+}
+}
+/* Näytöt, joiden maksimileveys on 799px */
+@media (max-width: 799px) {
+
+h2 {
+    font-size: 1.7em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1.2em;
+}
+#left, #right {
+    width: 100%;
+    clear: both;
+}
+#contact-form {
+    clear: both;
+    padding: 20px 30px 30px 30px;
+}
+}
+@media (min-width: 479px) {
+h1 {
+    font-size: 1.6em;
+}
+h2 {
+    font-size: 1.2em;
+}
 }

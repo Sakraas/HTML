@@ -3,84 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS-Kansio/reset.css">
     <link rel="stylesheet" href="CSS-Kansio/tyyli.css">
     <title>Cloud-Idea</title>
 </head>
 <body>
-    <header class="header">
-        <img class="logoheader" src="kuvat/logo.jpg" alt="Cloud-Idea-logo">
-        <h1 class="otsikkoheader">Pilvi-idea</h1>
-        <hr class="hrheader"/>
-    </header>
-    <header class="header-2">
-        <h1 class="otsikkoheader-2">Tervetuloa etusivullemme</h1>
-        <h2 class="alaostikkoheader-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit</h2>
-    </header>
-<section>
-    <article>
-        <ul>
-            <li>
-                <img class="pointtinumerot" src="kuvat/number1.png" alt="Numero1">
-                <h2>Ensimmäinen pointti</h2>
+    <main>
+        <header class="header">
+            <img src="kuvat/logo.jpg" alt="Cloud-Idea-logo">
+            <h1>Pilvi-idea</h1>
+            <hr/>
+        </header>
+        <header class="header-2">
+            <h1 class="otsikkoheader-2">Tervetuloa etusivullemme</h1>
+            <h2 class="alaostikkoheader-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit</h2>
+        </header>
+            <article id="left">
+                <ul class="points">
+                    <li>
+                        <img src="kuvat/number1.png" alt="Numero1">
+                        <h2>Ensimmäinen pointti</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+                    </li>
+                    <li>
+                        <img src="kuvat/number2.png" alt="Numero2">
+                        <h2>Toinen pointti</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+                    </li>
+                    <li>
+                        <img src="kuvat/number3.png" alt="Numero3">
+                        <h2>Kolmas pointti</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+                    </li>
+                </ul>   
+            
+             <hr />
+        <footer id="for-us">
+                        <h2>Tietoa meistä</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+        </footer> 
+        </article>
+        <!-- vasen sarake loppuu -->
+        <article id="right">
+        <aside>
+            <form id="contact-form">
+                <header><h1>Aloitus</h1>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </header>
+                <hr />
+                <!-- Tekstin syöttö -->
+                <div><label for="nimi">Nimi*</label>
+                <input type="text" id="nimi" />
+                </div>
+                <!-- Sähköpostin syöttö -->
+                <div><label for="email">Sähköposti*</label>
+                <input type="email" id="email" />
+                </div>
+                <!-- Tekstin syöttö -->
+                <div><label for="yritys">Yritys</label>
+                <input type="text" id="yritys" />
+                </div>
+                <!-- Numeron syöttö -->
+                <div><label for="number">Puhelin</label>
+                <input type="number" id="number" />
+                </div>
+                <div>
+                <em>*Vaaditutkentät</em>
+                <!-- Lähteä painikkeen syöttö -->
+                <input type="submit" value="Ota yhteyttä" />
+                </div>
+            </form>
+        </aside>
+        </article>
+        <!-- oikea sarake loppuu -->
+        <section id="testimonials">
+            <img src="kuvat/testimonial.png" alt="Asiakkaan suositus">
+            <blockquote>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                </p>
-            </li>
-            <li>
-                <img class="pointtinumerot" src="kuvat/number2.png" alt="Numero2">
-                <h2>Toinen pointti</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                </p>
-            </li>
-            <li>
-                <img class="pointtinumerot" src="kuvat/number3.png" alt="Numero3">
-                <h2>Kolmas pointti</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                </p>
-            </li>
-            <li>
-                <h2 class="tietoameistä">Tietoa meistä</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-            </li>
-        </ul>
-    </article>
-</section>
-<aside>
-    <h1 class="otsikkoaside">Aloitus</h1>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-        when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-    <!-- Tekstin syöttö -->
-    <label for="nimi">Nimi*</label>
-    <input type="text" id="nimi" />
-    <!-- Sähköpostin syöttö -->
-    <label for="email">Sähköposti*</label>
-    <input type="email" id="email" />
-    <!-- Tekstin syöttö -->
-    <label for="yritys">Yritys</label>
-    <input type="text" id="yritys" />
-    <!-- Numeron syöttö -->
-    <label for="number">Puhelinnumero</label>
-    <input type="number" id="number" />
-    <p class="vaaditutkentät">*Vaaditutkentät</p>
-    <!-- Lähteä painikkeen syöttö -->
-    <input type="submit" value="Lähetä" />
-    
-</aside>
-<footer class="footer">
-    <img class="kuvafooter-1" src="kuvat/testimonial.png" alt="Puhekuplat">
-    <p class="tekstifooter-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-        when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-</footer>
-<footer class="footer-2">
-    <hr class="hrfooter" />
-    <p class="copyright">Copyright &#169; Sakari Raassina, 2024</p>
-</footer>
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book."</blockquote>
+        </section>
+        <footer id="copyright">
+            <hr />
+            <p>Copyright &#169; Sakari Raassina, 2024</p>
+        </footer>
+      
+    </main>
 </body>
 </html>
