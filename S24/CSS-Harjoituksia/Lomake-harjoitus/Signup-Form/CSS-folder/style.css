@@ -12,6 +12,16 @@ th {
     text-align: left;
 }
 
-#Submit {
+input[type="submit"], input[type="reset"] {
     float: right;
+}
+input[type="submit"] {
+    background-color: chartreuse;
+    padding: 5px;
+    margin: 0 10px;
+}
+input[type="reset"] {
+    background-color:tomato;
+    padding: 5px;
+    margin: 0 10px;
 }
