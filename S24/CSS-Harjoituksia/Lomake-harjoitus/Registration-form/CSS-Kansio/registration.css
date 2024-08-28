@@ -1,0 +1,21 @@
+body {
+    font-size: 16px;
+}
+table {
+    background-color: white;
+    border: collapse;
+    border: grey 3px solid;
+    width: 400px;
+}
+td {
+    background-color: rgb(0, 174, 255);
+    padding: 7px;
+}
+th {
+    background-color: lightyellow;
+    color: red;
+    font-size: 2rem;
+}
+input[type="button"], input[type="reset"], input[type="submit"] {
+    padding: 10px 20px;
+}
