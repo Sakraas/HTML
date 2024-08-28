@@ -1,0 +1,17 @@
+table {
+    background-color: rgb(3, 3, 86);
+    color: yellow;
+    border:none;
+}
+th {
+    background-color: orange;
+    padding: 0.5rem;
+    font-size: 15px;
+}
+#Singup {
+    text-align: left;
+}
+
+#Submit {
+    float: right;
+}
