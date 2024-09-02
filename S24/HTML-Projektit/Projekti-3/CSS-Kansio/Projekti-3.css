@@ -1,0 +1,59 @@
+body, html {
+    height: 100%;
+}
+
+.parallax1, .parallax2, .parallax3, .parallax4 {
+
+    height: 100%;
+
+    /* rullaus efekti */
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Luokat parallax1 - parallax4 määrittävät taustakuvan jokaiselle eri harrastukselle */
+
+.parallax1 {
+    background-image: url(../hilla.jpg);
+}
+
+.parallax2 {
+    background-image: url(../kalastus.jpg);
+}
+
+.parallax3 {
+    background-image: url(../polttopuita.jpeg);
+}
+
+.parallax4 {
+    background-image: url(../ostaamyyda.jpg);
+}
+
+/* Parallax taustakuvien jälkeen tulevat näkyviin teksti osuudet. Tekstit luokittain järjestyksessä: text1, text2... jne. */
+
+/* Tekstikenttien koon muotoilua */
+.text1, .text2, .text3, .text4 {
+    text-align: center;
+    height: 10rem;
+    color: white;
+    font-size: 36px;
+}
+
+.text1 {
+    background-color: #75AF96;
+}
+
+.text2 {
+    background-color: #499273;
+}
+
+.text3 {
+    background-color: #0F5738;
+}
+
+.text4 {
+    background-color: #003A21;
+}

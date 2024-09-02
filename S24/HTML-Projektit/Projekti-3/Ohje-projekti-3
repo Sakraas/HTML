@@ -1,0 +1,20 @@
+Tehtävänä on tehdä muuttuvataustainen WEB-sivu (https://www.w3schools.com/howto/howto_css_parallax.asp). Esimerkin voitte nähdä täällä:
+
+https://jolly-kalam-23776e.netlify.com/parallaxsite/ tai https://keudaope.github.io/HTML/Projektit/p3.html
+
+Käyttäjätarinat:
+
+1. Haluan, että vaihtuvia taustakuvia on ainakin 4 ja ne ovat optimoitu WEB:iin ja ovat vielä mielellään samankokoisia
+2. Haluan, että Section / Article -kohdissa kerrotte ryhmäläistenne harrastuksista (HUOM! kuvavalinnat liittyvät tietenkin tähän)
+3. Haluan, että sivut on responsiiviset, eli sivut osaavat mukautua eri näyttöihin.
+4. Haluan, että sivut ovat koko selaimen levyisiä
+5. Haluan, että sekä HTML- että CSS-koodissa on kommentteja siitä, mitä mikäkin tägiyhdistelmä / CSS-muotoilu tarkoittaa ja mihin muotoilut kohdistuvat
+6. Haluan, että teette selkeän dokumentin (Esim. OneNoteen) siitä, kuka teki mitenkin, mitä työkaluja käytätte ja paljonko teillä meni SCRUM-yksiköitä kunkin käyttäjätarinan tekoon sekä kuvaus siitä, mitä on teidän Web-sivunne tarkoitus
+7. Haluan, että Section / Article -taustavärit haetaan Palettonin (paletton.com) värimaailmasta siten, että teillä on vain yksi väri käytössä sekä sen muunnelmat
+8. Haluan, että ensimmäisen kuvan päällä (kts. yllä esimerkki) on teidän Web-sivuston nimi H1-tason otsikkona, sekä sen alla lähde, mistä kuva haettiin siten, että kaikki kuvien lähteet ovat Arial 8-kokoisella fontilla
+9. Haluan, että kuvien nimet (kts. yllä esimerkki) on H3-tason otsikoina ja kuvien nimet eivät ole kuvien nimiä, vaan harrastusten nimet, joista kuvat kertoo ja taas otsikon alla lähde, mistä kuva on haettu
+10. Haluan, että loppukuvan päällä ei olekaan harrastuksen nimeä, vaan teidän ryhmänne jäsenten nimet H2-tason otsikkona siten, että Google Fontsista on haettu siihen Zhi Mang Xing -niminen fontti
+11. Haluan, että dokumentoinnissa myös kerrotte, mitä opitte tämän tehtävän myötä
+12. Haluan, että tallennatte työskentelynne GITHUBiin ja kirjoitatte dokumenttiinne tuon GitHub-preposition WEB-sivulinkin (ei siis preposition linkkiä)
+13. Haluan, että valmistaudutte esittelemään ryhmänne työn muulle luokalle. Tässä auttaa edellä tehty dokumentti
+14. Haluan, että käytätte HTML5:n elementtejä
