@@ -1,0 +1,21 @@
+Voitte käyttää HTML:ää, JavaScriptiä ja CSS:ää tämän projektin loppuun saattamiseen.  Hyvää koodausta!
+
+Käyttäjätarina # 1: Kunnianosoitussivulla tulisi olla <main>  elementti, joka sisältää kaikki muut elementit.
+
+Käyttäjätarina # 2: Minun pitäisi nähdä elementti, jolla on vastaava id = "otsikko", joka sisältää merkkijonon (eli tekstin), joka kuvaa kunnianosoitussivun aihetta (esim. "Dr. Norman Borlaug").
+
+Käyttäjätarina # 3: Minun pitäisi nähdä <figure> elementti.
+
+Käyttäjätarina # 4: <figure>-elementissä minun pitäisi nähdä img-elementti, jolla on vastaava id = "kuva".
+
+Käyttäjän tarina # 5: <figure>-elementissä pitäisi nähdä <figcaption> elementti, joka sisältää tekstisisällön, joka kuvaa img-div-kuvaa.
+
+Käyttäjätarina # 6: Minun pitäisi nähdä elementti, jolla on vastaava id = "tribute-info", joka sisältää tekstisisällön, joka kuvaa kunnianosoitussivun aihetta.
+
+Käyttäjätarina # 7: Minun pitäisi nähdä elementti, jolla on vastaava id = "tribute-link", joka linkittää ulkopuoliseen sivustoon, joka sisältää lisätietoja kunnianosoitussivun aiheesta. VIHJE: Sinun on annettava elementille kohdeattribuutti ja asetettava sen arvoksi _blank, jotta linkkisi avautuu uudessa välilehdessä (eli target = "_ tyhjä").
+
+Käyttäjätarina # 8: img-elementin koon tulisi muuttua reagoivasti sen emoelementin leveyteen nähden ylittämättä sen alkuperäistä kokoa.
+
+Käyttäjätarina # 9: img-elementin tulisi olla keskitetty vanhempaan elementtiin.
+
+Kun olet valmis, lähetä URL tämän tehtävän vastaukseen
