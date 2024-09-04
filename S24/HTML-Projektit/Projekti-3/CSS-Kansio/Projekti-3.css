@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap');
+
 body, html {
     height: 100%;
 }
 
 /* Parallaxien koon ja toiminnon määrittämistä */
 
-.p1, .p1x, .p2, .p2x, .p3, .p3x, .p4 {
+.p1, .p1x, .p2, .p2x, .p3, .p3x, .p4, .p4x, .p5, .p5x {
 
     height: 100%;
 
@@ -15,6 +17,13 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
+
+
+
+
+
 
 /* Luokkiin p1 - p4 määritettävät kuvat */
 
@@ -30,37 +39,76 @@ body, html {
     background-image: url(../polttopuita.jpeg);
 }
 
-.p4 {
+.p4, .p4x {
     background-image: url(../ostaamyyda.jpg);
+}
+.p5, .p5x {
+    background-image: url(../opiskelu.jpg);
 }
 
 /* Tekstien määrittelyä */
 
+
+/* Artikkelit vähintään 200% korkeiksi */
+
+article {
+    height: 200%;
+}
+
+
+/* Body backround määritys */
+body {
+    background-color: #09093B;
+    color:white;
+}
+
+
 /* Tekstikenttien muotoilua */
 
-.t1, .t2, .t3, .t4 {
+.t1, .t2, .t3, .t4, .t5, .t2first, .t3first, .t4first, .t5first {
     text-align: center;
     color: white;
     padding: 4px;
 }
 
-/* Tekstikenttien tausta värien määritys */
-
-.t1 {
-    background-color: #75AF96;
+.lahdeteksti {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8px;
 }
 
-.t2 {
-    background-color: #499273;
+
+
+
+
+
+
+
+/* Tekstikenttien tausta värien määritys
+
+.a1 {
+    background-color: #8080B3;
+}
+.a2 {
+    background-color: #565695;
+}
+.a3 {
+    background-color: #343477;
+}
+.a4 {
+    background-color: #1A1A59;
+}
+.a5 {
+    background-color: #09093B;
 }
 
-.t3 {
-    background-color: #0F5738;
-}
+Tämän voi halutessaan ottaa käyttöön, en sitä tee luettavuuden vuoksi ** */
 
-.t4 {
-    background-color: #003A21;
-}
+
+
+
+
+
+
 
 /* Otsikon muotoilua */
 
@@ -78,6 +126,15 @@ body, html {
 
 }
 
+
+
+
+
+
+
+
+/* Taustan sovittaminen tekstikenttiin nähden */
+
 .p145 {
     background-image: url(../hilla.jpg);
     height: 45%;
@@ -87,19 +144,66 @@ body, html {
     background-size: cover;
 }
 .p440 {
-    background-image: url(../ostaamyyda.jpg);
+    background-image: url(../koodaus.jpg);
     height: 40%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.p1x, .p2x, .p3x {
-    height: 0%;
+.luonut {
+    width: 100%;
+    text-align: center;
+    background-image: url(../koodaus.jpg);
+    opacity: 1;
+    height: 10%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+    font-family: "Zhi Mang Xing", cursive;
 }
 
-@media only screen and (max-width: 900px) {
-    body {
-        width: 100%; 
+.p1x, .p2x, .p3x, .p4x, .p5x {
+    height: 80%;
+}
+
+
+/* matkapuhelimelle responsiivisuus määritelmä */
+@media only screen and (max-width: 749px){
+    .p1x, .p2, .p2x, .p3, .p3x, .p4, .p4x, .p5, .p5x {
+        display: none;
     }
-  }
+    .p440 {
+        background-image: url(../koodaus.jpg);
+    }
+    img {
+        width: 100%;
+    }
+    .luonut {
+        width: 100%;
+        text-align: center;
+        background-image: url(../koodaus.jpg);
+        opacity: 1;
+        height: 10%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color:white;
+        font-family: "Zhi Mang Xing", cursive;
+    }
+    .t2, .t3, .t4, .t5 {
+        display: none;
+    }
+}
+/* isommalle näytölle oma määritelmä */
+@media only screen and (min-width: 750px){
+    .img750 {
+        display: none;
+    }
+    .t2first, .t3first, .t4first, .t5first {
+        display: none;
+    }
+}
