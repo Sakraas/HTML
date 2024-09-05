@@ -171,39 +171,4 @@ Tämän voi halutessaan ottaa käyttöön, en sitä tee luettavuuden vuoksi ** *
 
 
 /* matkapuhelimelle responsiivisuus määritelmä */
-@media only screen and (max-width: 749px){
-    .p1x, .p2, .p2x, .p3, .p3x, .p4, .p4x, .p5, .p5x {
-        display: none;
-    }
-    .p440 {
-        background-image: url(../koodaus.jpg);
-    }
-    img {
-        width: 100%;
-    }
-    .luonut {
-        width: 100%;
-        text-align: center;
-        background-image: url(../koodaus.jpg);
-        opacity: 1;
-        height: 10%;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        color:white;
-        font-family: "Zhi Mang Xing", cursive;
-    }
-    .t2, .t3, .t4, .t5 {
-        display: none;
-    }
-}
-/* isommalle näytölle oma määritelmä */
-@media only screen and (min-width: 750px){
-    .img750 {
-        display: none;
-    }
-    .t2first, .t3first, .t4first, .t5first {
-        display: none;
-    }
-}
+@media only screen and (max-width: 749px)
