@@ -49,7 +49,7 @@ body, html {
 /* Tekstien määrittelyä */
 
 
-/* Artikkelit vähintään 200% korkeiksi */
+/* Artikkelit vähintään 2 näytön korkeutta, korkeiksi */
 
 article {
     height: 200%;

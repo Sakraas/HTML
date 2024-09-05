@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ilmoittautumislomake</title>
+    <link href="CSS-Kansio/tyyli-projekti-4.css" rel="stylesheet" />
+</head>
+<body>
+    <main>
+        <h1>Ilmoittautumislomake</h1>
+        <ul>
+            <li>Tulossa olevien koulutusten ja tapahtumien kutsut julkaistaan etusivulla.</li>
+            <li>Ilmoita myös sähköpostiosoitteesi ja tarkista sen oikeinkirjoitus, lähetämme kurssivahvistukset sähköpostilla ko. kurssin ilmoittautumisajan päätyttyä. Heti lomakkeen lähetyksen jälkeen saat sähköpostiin automaattisen kuittauksen ilmoittautumisen perille tulosta.</li>
+            <li>Jos  ilmoittautumisaika on umpeutunut tai se on täynnä, kurssia ei löydy enää alasvetovalikosta. Toimistolta voi tiedustella vielä tilannetta, toimisto(ät)keuda.fi.</li>
+            <li>Luethan ilmoittautumisehdot.</li>
+            <li>Tutustuthan myös ohjeistukseen tilaisuuksiin osallistujille!</li>
+            </li>
+        </ul>
+        <h1>Koulutukseen ilmoittautuminen</h1>
+        <form>
+            <label for="Sukunimi">Sukunimi:</label>
+            <input type="text" name="Sukunimi" value="" /><br />
+            <label for="Etunimi">Etunimi:</label>
+            <input type="text" name="Etunimi" value="" /><br />
+            <label for="Puhelin">Puhelin:</label>
+            <input type="text" name="Puhelin" value="" /><br />
+            <label for="Sähköposti">Sähköposti:</label>
+            <input type="email" name="Email" value="" /><br />
+            <label for="tapahtuma">Ilmoittaudun:</label>
+            <input type="checkbox" name="HTML" value="" />
+            <label for="HTML">HTML-koulutukseen</label><br />
+            <input type="checkbox" name="CSS" value=""/>
+            <label for="CSS">CSS-koulutukseen</label><br />
+            <input type="checkbox" name="JavaScript"  />
+            <label for="JavaScript" >JavaScript-koulutukseen</label><br />
+            <label for="maksu">Maksu:</label>
+            <input type="radio" name="maksu" id="itse">
+            <label for="itse">Maksan itse</label><br>
+            <input type="radio" name="maksu" id="yritys">
+            <label for="yritys">Yritys maksaa</label><br>
+            <input type="radio" name="maksu" id="lahjakortti">
+            <label for="lahjakortti">Minulla on lahjakortti</label><br>
+            <label for="taso">Lähtötasosi:</label>
+            <select id="taso">
+                <option value="alkaja">Aloittelija</option>
+                <option value="koodannut">Olen jo koodannut jotakin</option>
+                <option value="guru">Olen ohjelmoinnin guru</option>
+            </select><br>
+            <label for="lisatiedot">Lisätietoja:</label>
+            <textarea name="lisatiedot" id="" cols="40" rows="10"></textarea><br>
+            <button>Lähetä lomake</button>
+        </form>
+    </main>
+</body>
+</html>
