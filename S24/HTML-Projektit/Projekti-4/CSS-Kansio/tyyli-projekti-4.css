@@ -47,6 +47,7 @@ button{
 	border-radius: 10px;
 	background-color: #606c38;
 	margin-left: 325px;
+    color: #fefae0;
 }
 label[for='lisatiedot']{
     float: inline-start;
