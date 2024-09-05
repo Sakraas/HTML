@@ -2,16 +2,17 @@
 
 body, html {
     height: 100%;
+    background-color: #244C00;
 }
+
 
 /* Parallaxien koon ja toiminnon määrittämistä */
 
-.p1, .p1x, .p2, .p2x, .p3, .p3x, .p4, .p4x, .p5, .p5x {
+.p1, .p2, .p3, .p4, .p5, .p6, .parallax {
 
     height: 100%;
 
-    /* rullaus efekti */
-
+    /* Luodaan parallax efekti */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -19,138 +20,75 @@ body, html {
 }
 
 
-
-
-
-
-
-
-/* Luokkiin p1 - p4 määritettävät kuvat */
-
-.p1, .p1x {
+/* Parallaxien taustakuvat */
+.p1{
     background-image: url(../hilla.jpg);
 }
-
-.p2, .p2x {
+.p2{
     background-image: url(../kalastus.jpg);
 }
-
-.p3, .p3x {
+.p3{
     background-image: url(../polttopuita.jpeg);
 }
-
-.p4, .p4x {
+.p4{
     background-image: url(../ostaamyyda.jpg);
 }
-.p5, .p5x {
+.p5{
     background-image: url(../opiskelu.jpg);
 }
-
-/* Tekstien määrittelyä */
-
-
-/* Artikkelit vähintään 2 näytön korkeutta, korkeiksi */
-
-article {
-    height: 200%;
+.p6{
+    background-image: url(../koodaus.jpg);
 }
 
-
-/* Body backround määritys */
-body {
-    background-color: #09093B;
-    color:white;
-}
-
-
-/* Tekstikenttien muotoilua */
-
-.t1, .t2, .t3, .t4, .t5, .t2first, .t3first, .t4first, .t5first {
+/* Teksti keskelle väliotsikoissa */
+.t1, .t2, .t3, .t4, .t5 {
     text-align: center;
-    color: white;
-    padding: 4px;
+    padding: 20px;
+    margin: 0 auto;
 }
 
-.lahdeteksti {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 8px;
+/* Värit väliotsikoille */
+.t1 {
+    background-color: #244C00;
+}
+.t2 {
+    background-color: #407213;
+} 
+.t3 {
+    background-color: #639833;
+}
+.t4 {
+    background-color: #8CBE5F;
+}
+.t5 {
+    background-color: #BCE498;
 }
 
+/* Artikkelin korkeus */
+.a1, .a2, .a3, .a4, .a5 {
+    height: 50%;
+    margin: 0 auto;
+    margin-top: -20px;
+}
 
-
-
-
-
-
-
-/* Tekstikenttien tausta värien määritys
-
+/* Artikkelin värit */
 .a1 {
-    background-color: #8080B3;
+    background-color: #244C00;
 }
 .a2 {
-    background-color: #565695;
-}
+    background-color: #407213;
+} 
 .a3 {
-    background-color: #343477;
+    background-color: #639833;
 }
 .a4 {
-    background-color: #1A1A59;
+    background-color: #8CBE5F;
 }
 .a5 {
-    background-color: #09093B;
+    background-color: #BCE498;
 }
 
-Tämän voi halutessaan ottaa käyttöön, en sitä tee luettavuuden vuoksi ** */
-
-
-
-
-
-
-
-
-/* Otsikon muotoilua */
-
-.otsikko {
-    width: 100%;
-    text-align: center;
-    background-image: url(../hilla.jpg);
-    opacity: 1;
-    height: 10%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color:white;
-
-}
-
-
-
-
-
-
-
-
-/* Taustan sovittaminen tekstikenttiin nähden */
-
-.p145 {
-    background-image: url(../hilla.jpg);
-    height: 45%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.p440 {
-    background-image: url(../koodaus.jpg);
-    height: 40%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+/* Sivun loppuun teksti */
 .luonut {
     width: 100%;
     text-align: center;
@@ -163,12 +101,25 @@ Tämän voi halutessaan ottaa käyttöön, en sitä tee luettavuuden vuoksi ** *
     background-size: cover;
     color:white;
     font-family: "Zhi Mang Xing", cursive;
+    padding-top: 25%;
 }
 
-.p1x, .p2x, .p3x, .p4x, .p5x {
-    height: 80%;
+/* otsikon jälkeinen .p6 näkyviin vain puolet, ettei loppu teksti scrollaa ylös asti */
+
+.p6 {
+    height: 50%;
 }
 
-
-/* matkapuhelimelle responsiivisuus määritelmä */
-@media only screen and (max-width: 749px)
+/* Otsikon asetukset: keskelle näyttöä, läpinäkyväksi */
+.otsikko table {
+    padding-top: 20%;
+    opacity: 1;
+    color: white;
+    background-image: url(../hilla.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    width: 100%;
+}
